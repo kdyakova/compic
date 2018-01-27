@@ -91,7 +91,7 @@
 
 					
 					</script>
-					<button class = "like" ><a href=<%out.print("Like?post_ID=" + p.getID());%>
+					<button class = "like" style="float: left"><a href=<%out.print("Like?post_ID=" + p.getID());%>
 						style="background: #ffffff url(img/likeIcon.bmp) no-repeat;">
 						
 						Like :
@@ -100,7 +100,7 @@
 						%>
 					</a> 
 					</button>
-					<button class = "dislike"><a href=<%out.print("Dislike?post_ID=" + p.getID());%>
+					<button class = "dislike" style="float: right"><a href=<%out.print("Dislike?post_ID=" + p.getID());%>
 						style="float: right; background: #ffffff url(img/hateIcon.bmp) no-repeat 3px -2px;">
 						Hate :
 						<%
