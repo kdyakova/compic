@@ -12,6 +12,8 @@ public class MySQLUtil {
 	private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 	private static final String DB_URL = "jdbc:mysql://localhost:3306?autoReconnect=true&useSSL=false";
 
+	
+	
 	// Database credentials
 	private static final String USER = "root";
 	private static final String PASS = "tupfaceb00k";
