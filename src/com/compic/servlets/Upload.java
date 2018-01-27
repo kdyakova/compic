@@ -32,7 +32,6 @@ public class Upload extends HttpServlet {
 			String appPath = request.getServletContext().getRealPath("");
 			// constructs path of the directory to save uploaded file
 			String savePath = appPath + File.separator + SAVE_DIR;
-
 			// creates the save directory if it does not exists
 			File fileSaveDir = new File(savePath);
 			if (!fileSaveDir.exists()) {
@@ -50,7 +49,7 @@ public class Upload extends HttpServlet {
 				String fileName = username + numberOfPost + ".jpg";
 				MySQLUtil.addNewPicture(new Picture(0, username, null, fileName));
 				part.write(savePath + File.separator + fileName);
-				part.write(BACK_UP_DIR + File.separator + fileName);
+//				part.write(BACK_UP_DIR + File.separator + fileName);
 				response.sendRedirect("./Index");
 			}
 		} catch (BadLoginException e) {
