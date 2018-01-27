@@ -67,7 +67,7 @@
 
 		<div class="inner-wrapper" style="height: 45px;">
 			<ul class="footer">
-				<li><a href="">About us</a></li>
+				<li><a href="About">About us</a></li>
 			</ul>
 		</div>
 
